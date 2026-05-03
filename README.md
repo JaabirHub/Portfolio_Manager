@@ -4,15 +4,6 @@ Backend-first portfolio management service for creating, storing, and organising
 Overview
 This project provides a Spring Boot backend that powers a portfolio dashboard for managing project data such as name, description, status, technologies, and links. It is designed to showcase backend engineering skills for enterprise Java roles while remaining usable as the backend for a personal developer portfolio site.
 
-Features
-POST /dashboard/project endpoint to create project entries.
-
-Stores metadata: name, description, status, backend technologies, tools.
-
-Layered Spring Boot structure (controller, service, repository, model).
-
-Uses ORM-managed schema for quick development with H2 (PostgreSQL planned).
-
 Tech Stack
 Layer	Technology
 Language	Java
