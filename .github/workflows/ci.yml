@@ -1,0 +1,39 @@
+name: Java CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+
+      - name: Compile
+        working-directory: ./backend
+        run: mvn -B -DskipTests compile
+
+      - name: Checkstyle
+        working-directory: ./backend
+        run: mvn -B checkstyle:check
+
+      - name: Tests + JaCoCo
+        working-directory: ./backend
+        run: mvn -B test
+
+      - name: SpotBugs
+        working-directory: ./backend
+        run: mvn -B spotbugs:check
+

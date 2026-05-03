@@ -1,9 +1,11 @@
 package com.jaabir.backend.dto;
 
 import java.util.List;
-
 import com.jaabir.backend.model.Status;
 
+/**
+ * This DTO is used to not expose a project object.
+ */
 public class ProjectDTO {
   private Long id;
   private String name;
