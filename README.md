@@ -1,16 +1,16 @@
 Portfolio Manager
+
 Backend-first portfolio management service for creating, storing, and organising software project entries in one place.
 
 Overview
+
 This project provides a Spring Boot backend that powers a portfolio dashboard for managing project data such as name, description, status, technologies, and links. It is designed to showcase backend engineering skills for enterprise Java roles while remaining usable as the backend for a personal developer portfolio site.
 
 Tech Stack
-Layer	Technology
-Language	Java
-Backend	Spring Boot
-Build	Maven
+
+Backend	Java + Spring Boot + Maven
 Database	H2 (dev), PostgreSQL (future)
-Frontend React (future)
+Frontend React + NextJs(future)
 Why this project matters
 This project allows me to present my projects on a personal site, demonstrating full-stack capabilities.
 
