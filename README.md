@@ -23,19 +23,6 @@ Frontend React (future)
 Why this project matters
 This project allows me to present my projects on a personal site, demonstrating full-stack capabilities.
 
-Backend structure
-src/
-├── main/
-│   ├── java/
-│   │   └── ...
-│   │       ├── controller/
-│   │       ├── service/
-│   │       ├── model/
-│   │       └── repository/
-│   └── resources/
-└── test/
-The codebase follows a typical Spring Boot layered structure so that request handling, business logic, and persistence concerns remain separated and easier to maintain as the project grows.
-
 Getting started
 
 Prerequisites
